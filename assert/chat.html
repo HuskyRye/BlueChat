@@ -1,0 +1,128 @@
+﻿<html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style type="text/css">
+    div,
+    p {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font-family: sans-serif;
+        vertical-align: baseline;
+    }
+
+    body {
+        background-color: #ecedf1;
+    }
+
+    .chat_container {
+        margin: 0;
+        min-width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+    }
+
+    .chat_content_group {
+        padding: 10px 0px;
+    }
+
+    .chat_content_avatar {
+        float: left;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 8px
+    }
+
+    .chat_content_image {
+        border: 3px solid white;
+        border-radius: 12px;
+        max-width: 50%;
+    }
+
+    .chat_content_face {
+        width: 28px;
+        height: 28px;
+        vertical-align: text-bottom;
+    }
+
+    .chat_content {
+        display: inline-block;
+        min-height: 16px;
+        max-width: 70%;
+        background: white;
+        color: black;
+        border-radius: 12px;
+        padding: 10px 10px;
+        line-height: 1.4
+    }
+
+    .chat_content_group.buddy {
+        text-align: left
+    }
+
+    .chat_content_group.self {
+        text-align: right
+    }
+
+        .chat_content_group.self > .chat_content {
+            background: rgb(1, 136, 251);
+            color: white;
+        }
+
+        .chat_content_group.self > .chat_content_avatar {
+            float: right;
+            margin: 0 0 0 8px
+        }
+
+        .chat_content_group.self > .chat_content {
+            text-align: left
+        }
+
+        .chat_content_group.self > .chat_content_image {
+            border: 3px solid rgb(1, 136, 251);
+        }
+
+    .chat_time {
+        text-align: center
+    }
+
+        .chat_time span {
+            color: rgba(255, 255, 255, .8);
+            background: rgba(0, 0, 0, .3);
+            padding: 2px 8px;
+            display: inline-block;
+            margin: 10px;
+            font-size: 13px;
+            border-radius: 8px
+        }
+</style>
+
+<body onload="document.body.scrollTop = document.body.scrollHeight">
+    <div class="chat_container" id="container">
+
+    </div>
+
+    <script type="text/javascript">
+            window.onload = function () {
+                setInterval("fun()", 1000);
+            }
+            var container = document.getElementById("container");
+            var element;
+            function fun() {
+                // var temp = '<div class="chat_time"><span>09-13 21:47</span></div><div class="chat_content_group self">' + '<img class="chat_content_avatar" src="nobody.png" width="40px" height="40px">' + '<p class="chat_content ">给我发条消息</p>' + '</div>' + '</div><div class="chat_content_group buddy">' + '<img class="chat_content_avatar" src="nobody2.png" width="40px" height="40px">' + '<p class="chat_content ">给我发条消息</p>' + '</div>';
+
+                var temp = window.AppInventor.getWebViewString();
+
+                if (temp != element) {
+                    element = temp;
+                    var createDiv = document.createElement("div");
+                    createDiv.innerHTML = element;
+                    container.appendChild(createDiv);
+                }
+                scroll(0, document.body.scrollHeight - document.body.clientHeight);
+            }
+    </script>
+</body>
+
+</html>
