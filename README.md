@@ -20,25 +20,25 @@
 
 为了避免混乱，教程中使用的是系统默认的蓝牙名称
 
-<img src="https://github.com/Genius320/BlueChat/blob/master/assert/introduction1.png?raw=true"  width="540" />
+<img src="https://github.com/Genius320/BlueChat/blob/master/assert/introduction1.png?raw=true"  width="540" >
 
 打开蓝牙后需要跟你的好友进行配对，这一步是必不可少的！
 
-<img src="https://github.com/Genius320/BlueChat/blob/master/assert/introduction2.png?raw=true" width="50%" height="50%" />
+<img src="https://github.com/Genius320/BlueChat/blob/master/assert/introduction2.png?raw=true"  width="50%" >
 
 配对完成之后就可以进入 BlueChat 了，第一个版面为教程版面，第二个版面为好友版面，第三个版面为设置版面，为了更愉快的聊天，我们先到第三个版面设置一下基本信息，由于是使用 App Inventor 开发的应用，目前能够设置的只有昵称，设置完成后记得点击保存，为了防止大家手滑，退出程序的按钮目前不可以使用
 
-<img src="https://github.com/Genius320/BlueChat/blob/master/assert/introduction3.png?raw=true" width="50%" height="50%" />
+<img src="https://github.com/Genius320/BlueChat/blob/master/assert/introduction3.png?raw=true"  width="50%" >
 
 接下来来到第二个界面，此处的列表会显示所有你已经配对的蓝牙设备（在编写教程前，我取消了10多个已有配对），选择你想要配对到的好友，注意，此处的一串是蓝牙设备标识符，不需要理解，后面的文字是在系统设置中设定的手机名称，并不是本程序中的名称。
 
 选择完成后将会自动连接到对方的设备，当然，你的好友也需要下载并安装这款 App。如果信号不通畅或者遇到未知错误，将会提示无法连接，此时双方清除手机后台，重新开启程序即可。
 
-<img src="https://github.com/Genius320/BlueChat/blob/master/assert/introduction4.png?raw=true" width="50%" height="50%" />
+<img src="https://github.com/Genius320/BlueChat/blob/master/assert/introduction4.png?raw=true"  width="50%" >
 
 连接上后对方的昵称会显示在屏幕的正上方，为了防止混淆，另外一台设备上我将昵称设置为了手机B。此时就可以愉快的和好友聊天了，当然，由于时间关系，语音发送和图片发送等功能没有实现，但是表情功能非常有意思，改变了 QQ 表情的固有思想，改用颜文字，使聊天内容更加生动活泼。
 
-<img src="https://github.com/Genius320/BlueChat/blob/master/assert/introduction5.png?raw=true" width="50%" height="50%" />
+<img src="https://github.com/Genius320/BlueChat/blob/master/assert/introduction5.png?raw=true"  width="50%" >
 
 ## 创作心得
 
