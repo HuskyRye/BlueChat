@@ -1,5 +1,7 @@
 # BlueChat
 
+一个简单的蓝牙聊天 APP
+
 ![](https://github.com/Genius320/BlueChat/blob/master/assert/logo5.png?raw=true)
 
 ## Before
